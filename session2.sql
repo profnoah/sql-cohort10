@@ -1,6 +1,6 @@
 	
 /*===================================================
-														LIMIT
+	LIMIT
 ====================================================*/
  	/*invoices tablosunda Total değeri 10$'dan büyük olan ilk 4 kayıt'ın InvoiceId, 
 	InvoiceDate ve total bilgilerini sorgulayiniz */
@@ -11,7 +11,7 @@
 	
 	
 /*===================================================
-													ORDER BY
+	ORDER BY
 ====================================================*/
 	
 	/*invoices tablosunda Total değeri 10$'dan büyük olan kayıtları Total değerine göre 
@@ -32,7 +32,7 @@
 	
 			
 /*===================================================
-								 LOGICAL OPERATORS (AND,OR,NOT)
+	LOGICAL OPERATORS (AND,OR,NOT)
 ====================================================*/
 
 	/* invoices tablosunda ülkesi (BillingCountry) USA olmayan kayıtları total değerine
