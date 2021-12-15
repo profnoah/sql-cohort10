@@ -60,8 +60,7 @@
 	
 	SELECT Name, Milliseconds
 	FROM tracks
-	WHERE Milliseconds > ( 	SELECT AVG(Milliseconds)
- FROM tracks);
+	WHERE Milliseconds > (SELECT AVG(Milliseconds) FROM tracks);
 					
 /*===================================================
  GROUP BY
