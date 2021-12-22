@@ -9,9 +9,7 @@
 
 	SELECT trackid, name, albumid
 	FROM tracks
-	WHERE albumid = ( 	SELECT albumid
-									FROM albums
-									WHERE title = 'Faceless');
+	WHERE albumid = (SELECT albumid FROM albums WHERE title = 'Faceless');
 					
 	/* albums tablosundaki Title sutunu ‘Faceless’ olan kaydın albumid'si elde ederek 
 	tracks tablosunda bu değere eşit olan kayıtların bilgilerini JOIN kullanarak listeyiniz.
@@ -30,8 +28,8 @@
 	SELECT trackid,name,albumid
 	FROM tracks
 	WHERE albumid IN (	SELECT AlbumId
-									FROM albums
-									WHERE title IN ('Faceless', 'Let There Be Rock'));
+																			FROM albums 
+																			WHERE title IN ('Faceless', 'Let There Be Rock'));
 	
 	/* albums tablosundaki Title sutunu Faceless veya Let There Be Rock olan kayıtların 
 	albumid'lerini elde ederek tracks tablosunda bu id'lere eşit olan kayıtların bilgilerini 
