@@ -128,16 +128,45 @@
  INNER JOIN siparisler 
  ON markalar.marka_id = siparisler.marka_id;
  
- /* ÖDEV: Chinook veritabanındaki tracks tablosunda bulunan her bir şarkının türü (genre)
+/* Markalar ve Siparisler tablolarındaki tüm araç markalarının siparis bilgilerini
+   (marka_id,marka_adi,siparis_adedi,siparis_tarihi) listeleyen bir sorgu yaziniz.*/
+	
+	SELECT m.marka_id, m.marka_adi, s.siparis_adedi, s.siparis_tarihi
+	FROM markalar m
+	LEFT JOIN siparisler s ON  s.marka_id = m.marka_id;
+	
+/* Chinook veritabanındaki tracks tablosunda bulunan her bir şarkının türü'nü (genre)
 listeleyiniz.*/
 
+	SELECT * FROM tracks; 
+	SELECT * FROM genres;
+	
+	SELECT t.Name, g.name as Genre
+	FROM tracks t
+	JOIN genres g 
+	ON t.GenreId = g.GenreId;
 	 
- /* ÖDEV: invoice tablosundaki faturaların her birinin müşteri adını (FirstName),
- soyadını (lastName), fatura tarihi (InvoiceDate) ve fatura meblağını (total) 
+ /* invoice tablosundaki faturaların her birinin müşteri adını (FirstName),
+ soyadını (lastName), fatura tarihini (InvoiceDate) ve fatura meblağını (total) 
  listeleyen sorguyu yazınız */
  
+	SELECT * FROM invoices;
+	SELECT * FROM customers;
+	 
+	SELECT c.FirstName, c.LastName, i.InvoiceDate,i.total
+	FROM invoices i
+	JOIN customers c 
+	ON i.CustomerId = c.CustomerId;
 	
-	/* ÖDEV: artists tablosunda bulunan her bir kişinin albums tablosunda 
-bulunan tüm albümlerinin listeleyen sorguyu yazınız. 
+	/* artists tablosunda bulunan tüm kişilerin albums tablosunda 
+bulunan albümlerini listeleyen sorguyu yazınız. 
 Sorguda ArtistId, Name, Title ve AlbumId olmalıdır */
+ 
+	SELECT * FROM artists;
+	SELECT * from albums;
+	
+	SELECT ar.ArtistId,  ar.Name, al.Title, al.AlbumId 
+	FROM artists ar
+	LEFT JOIN albums al
+	ON al.ArtistId = ar.ArtistId;
  
