@@ -27,8 +27,7 @@
 	
 	SELECT trackid,name,albumid
 	FROM tracks
-	WHERE albumid IN (	SELECT AlbumId
-																			FROM albums 
+	WHERE albumid IN (SELECT AlbumId FROM albums 
 																			WHERE title IN ('Faceless', 'Let There Be Rock'));
 	
 	/* albums tablosundaki Title sutunu Faceless veya Let There Be Rock olan kayıtların 
