@@ -44,13 +44,12 @@ WHERE title IN ('Faceless', 'Let There Be Rock');
  DDL COMMANDS (CREATE TABLE, DROP TABLE,ALTER TABLE)
 ====================================================*/	
 	
-	/*------------------------------------------------------------------------------------------
-	/*  CREATE TABLE
-	/*------------------------------------------------------------------------------------------
+/*------------------------------------------------------------------------------------------
+/*  CREATE TABLE
+/*------------------------------------------------------------------------------------------
 	
-	/*personel adinda bir tablo oluşturunuz.  Tabloda first_name, last_name 
-	age(INT) ve hire_date (Date) sutunuları bulunmalıdır.
-	*/
+/*personel adinda bir tablo oluşturunuz.  Tabloda first_name, last_name 
+age(INT) ve hire_date (Date) sutunuları bulunmalıdır.	*/
 CREATE TABLE personel (
 	first_name VARCHAR(20),
 	last_name VARCHAR(20),
