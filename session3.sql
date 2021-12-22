@@ -128,9 +128,7 @@
  INNER JOIN siparisler 
  ON markalar.marka_id = siparisler.marka_id;
  
- 
-
-/* ÖDEV: Chinook veritabanındaki tracks tablosunda bulunan her bir şarkının türü (genre)
+ /* ÖDEV: Chinook veritabanındaki tracks tablosunda bulunan her bir şarkının türü (genre)
 listeleyiniz.*/
 
 	 
