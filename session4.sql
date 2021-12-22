@@ -128,10 +128,10 @@ FOREIGN KEY - Başka bir tablodaki Primary Key’i referans göstermek için ku
 /*----------------------------------------------------------------------------------------*/
 	
 CREATE TABLE workers(
- id INTEGER PRIMARY KEY,
+	id INTEGER PRIMARY KEY,
 	id_number VARCHAR(11) UNIQUE NOT NULL,
 	name TEXT DEFAULT 'NONAME',
- salary INTEGER NOT NULL
+	salary INTEGER NOT NULL
 );
     
 INSERT INTO workers VALUES(1, '12345678910','AHMET CAN', 7000 );
