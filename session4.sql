@@ -174,15 +174,15 @@ ON e.EmployeeId=v.employee_id;
 yeni bir sutun ekleyelim */
 	
 ALTER TABLE vacation_plan2
-ADD	name TEXT DEFAULT 'noname';
+ADD name TEXT DEFAULT 'noname';
 	
 /*vacation_plan2 tablosundaki name sutununu siliniz*/
 ALTER TABLE vacation_plan2
 DROP COLUMN name ;					
 	
 /* workers tablosunun adını people olarak değiştiriniz */
-	ALTER TABLE workers
-	RENAME TO people;
+ALTER TABLE workers
+RENAME TO people;
 
 /*------------------------------------------------------------------------------------------
 /*  UPDATE,DELETE
