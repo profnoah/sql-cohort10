@@ -130,7 +130,7 @@ FOREIGN KEY - Başka bir tablodaki Primary Key’i referans göstermek için ku
 CREATE TABLE workers(
  id INTEGER PRIMARY KEY,
 	id_number VARCHAR(11) UNIQUE NOT NULL,
- name TEXT DEFAULT 'NONAME',
+	name TEXT DEFAULT 'NONAME',
  salary INTEGER NOT NULL
 );
     
