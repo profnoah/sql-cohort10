@@ -5,12 +5,12 @@ adını araclar olarak kaydederiz. Sonrasında ise aşağıdaki SQL komutların�
 JOIN işlemlerinde kullanılan araclar.db bu şekilde oluşturulmuştur */
 
 CREATE TABLE siparisler(
-	id INTEGER NOT NULL,
-	marka_id INTEGER NOT NULL,
-	siparis_tarihi	DATE,
-	siparis_adedi INTEGER,
-	FOREIGN KEY(marka_id) REFERENCES markalar(marka_id),
-	PRIMARY KEY(id)
+ id INTEGER NOT NULL,
+ marka_id INTEGER NOT NULL,
+ siparis_tarihi	DATE,
+ siparis_adedi INTEGER,
+ FOREIGN KEY(marka_id) REFERENCES markalar(marka_id),
+ PRIMARY KEY(id)
 );
 
 CREATE TABLE markalar(
