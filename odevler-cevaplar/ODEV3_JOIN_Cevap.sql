@@ -9,8 +9,8 @@
     ise_baslama DATE,
     maas REAL,
     bolum_id INTEGER,
-    FOREIGN KEY(bolum_id) REFERENCES bolumler(bolum_id) 
-	);
+    FOREIGN KEY(bolum_id) REFERENCES bolumler(bolum_id)
+  );
   
   CREATE TABLE bolumler (
     bolum_id INTEGER PRIMARY KEY,
@@ -60,11 +60,11 @@
   NOT: calisani olmasa bile bolum ismi gosterilmelidir.
 ------------------------------------------------------------------------------*/  
   SELECT B.bolum_isim, P.personel_isim, P.ise_baslama
-	FROM bolumler B
-	LEFT JOIN personel P
-	ON P.bolum_id=B.bolum_id
-	WHERE B.bolum_id IN (40,30,50)
-	ORDER BY B.bolum_isim;
+  FROM bolumler B
+  LEFT JOIN personel P
+  ON P.bolum_id=B.bolum_id
+  WHERE B.bolum_id IN (40,30,50)
+  ORDER BY B.bolum_isim;
 
 /* -----------------------------------------------------------------------------
   SORGU3: Tüm bolumlerde calisan personelin isimlerini, bolum isimlerini 
