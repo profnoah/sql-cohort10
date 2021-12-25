@@ -14,9 +14,9 @@ CREATE TABLE siparisler(
 );
 
 CREATE TABLE markalar(
-	marka_id	INTEGER NOT NULL,
-	marka_adi VARCHAR,
-	PRIMARY KEY(marka_id)
+ marka_id	INTEGER NOT NULL,
+ marka_adi VARCHAR,
+ PRIMARY KEY(marka_id)
 );
 
 INSERT INTO markalar(marka_id,marka_adi) VALUES(1001, "HONDA");
